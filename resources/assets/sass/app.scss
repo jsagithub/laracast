@@ -8,7 +8,8 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
-$red= red;
+$red: red;
+$white: #fff;
 
 body{
 	color: $red;
