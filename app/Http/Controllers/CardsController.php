@@ -8,6 +8,7 @@ use App\Http\Requests;
 
 use App\Card;
 
+
 class CardsController extends Controller
 {
    public function index()
@@ -19,6 +20,8 @@ class CardsController extends Controller
 
    public function show(Card $card)
    {
+   		$card->load('notes.user');
+   		
    		return view ('cards.show', compact('card'));
    }
 }
